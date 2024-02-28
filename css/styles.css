@@ -11,6 +11,7 @@ body {
   color: hsl(0, 0%, 7%);
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -82,6 +83,19 @@ main .info img {
 main .info span {
   color: hsl(0, 0%, 7%);
   font-weight: 800;
+}
+
+footer {
+  color: hsl(0, 0%, 7%);
+  font-size: 0.65em;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 17px;
+}
+footer a {
+  text-decoration: none;
+  font-weight: 600;
+  color: hsl(0, 0%, 7%);
 }
 
 @media screen and (max-width: 420px) {

@@ -20,6 +20,7 @@ body{
     color: $Black;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -104,6 +105,20 @@ main{
 
     }
 
+}
+
+
+footer {
+    color: $Black;
+    font-size: 0.65em;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 17px;
+    a{
+        text-decoration: none;
+        font-weight: 600;
+        color: $Black;
+    }
 }
 
 @media screen and (max-width: 420px){
