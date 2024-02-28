@@ -1,0 +1,148 @@
+// IMPORTAÇÕES
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+// VARIÁVEIS
+
+$Yellow: hsl(47, 88%, 63%);
+$White: hsl(0, 0%, 100%);
+$Grey: hsl(0, 0%, 50%);
+$Black: hsl(0, 0%, 7%);
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $Yellow;
+    font-family: "Figtree", sans-serif;
+    color: $Black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: $White;
+    border: 1px solid $Black;
+    border-radius: 15px;
+    padding: 22.5px;
+    box-shadow: 8px 8px $Black;
+    width: 385px;    
+    &:hover{
+        cursor:pointer;
+        box-shadow: 16px 16px $Black;
+        .title h1{
+            color: $Yellow;
+        }
+    }
+
+    div{
+        margin: 0;
+    }
+
+    .container-img{
+        align-self: center;
+    }
+
+    .container-img img{
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .learning{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .learning span{
+        background-color: $Yellow;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1em;
+        font-weight: 900;
+    }
+
+    .published p{
+        font-weight: 700;
+        margin-top: 7px;
+    }
+
+    .title h1{
+        color: $Black;
+        font-size: 1.5em;
+        font-weight: 800;
+        margin-block: 5px;
+    }
+
+    .text p{
+        line-height: 1.4em;
+        color: $Grey;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info img{
+        height: 2em;
+        margin-right: 15px;
+    }
+
+    .info span{
+        color: $Black;
+        font-weight: 800;
+
+    }
+
+}
+
+@media screen and (max-width: 420px){
+    main{
+        width: 345px;  
+    }
+
+}
+
+@media screen and (max-width: 375px){
+    main{
+        width: 320px;
+        padding: 18px;
+    }
+
+}
+
+@media screen and (max-width: 340px){
+    main{
+        width: 270px;
+        padding: 15px;
+    }
+
+}
+
+@media screen and (max-width: 280px){
+    main{
+        width: 240px;
+        padding: 12px;
+    }
+
+}
+
+@media screen and (max-width: 260px){
+    main{
+        width: 150px;
+        padding: 8px;
+    }
+
+}
+
+
